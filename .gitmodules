@@ -1,0 +1,3 @@
+[submodule "make-mocks"]
+	path = make-mocks
+	url = https://github.com/sarbajit125/make-mocks.git
