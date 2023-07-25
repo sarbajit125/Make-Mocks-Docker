@@ -15,7 +15,7 @@ Inspired from [Mockit](https://github.com/boyney123/mockit)  and developed in Ne
 
 Make sure you have docker running
     1. Clone this repo
-     `https://github.com/sarbajit125/Make-Mocks-Docker.git`
+     `git clone --recursive https://github.com/sarbajit125/Make-Mocks-Docker.git`
     2. open the folder in terminal and start the container  
      `cd Make-Mocks-Docker && docker-compose up --build`
     3. Once everything is running you will be able to access ui in this url  
