@@ -25,9 +25,6 @@ services:
     build: 
       context: './make-mocks'
       target: runner
-    # depends_on:
-    #   db:
-    #     condition: service_started
     volumes:
       - postgres-data:/app/postgres-data
     environment:
@@ -37,7 +34,7 @@ services:
       DB_USER: postgres
       DB_PASSWORD: postgres
       DB_NAME: mydb
-      NEXT_BASE_URL: http://192.168.29.50:8080/
+      NEXT_PUBLIC_BASE_URL: http://192.168.29.50:8080/
     links:
       - db
     ports:
@@ -45,4 +42,3 @@ services:
 
 volumes:
   postgres-data:
-     
