@@ -17,7 +17,7 @@ Make sure you have docker running
     1. Clone this repo
      `git clone --recursive https://github.com/sarbajit125/Make-Mocks-Docker.git`
     2. open the folder in terminal and start the container  
-     `cd Make-Mocks-Docker && docker-compose up --build`
+     `cd Make-Mocks-Docker && export DOCKER_BUILDKIT=1 && docker-compose up --build`
     3. Once everything is running you will be able to access ui in this url  
      `http://localhost:8080/`
 

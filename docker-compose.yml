@@ -27,6 +27,7 @@ services:
       target: runner
     volumes:
       - postgres-data:/app/postgres-data
+    platform: linux/amd64
     environment:
       NODE_ENV: production
       DB_HOST: postgres
