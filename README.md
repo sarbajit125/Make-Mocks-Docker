@@ -34,6 +34,16 @@ Make sure you have docker running
 - PostgresSQL server runs by default port in 5040.
 - All ports and environment variables can cofigured from docker compose file.
 
+## Updating
+
+- To update Web container without any downtime take latest pull and run following command `docker-compose up -d --build`
+- to seed all domains from json use this curl `curl --location 'http://localhost:8080/api/uploadDomains' \
+--header 'Authorization: Bearer {{jwtToken}}' \
+--form 'routes=@"/Users/comviva/Downloads/MakeMocksBackup/Domains.json"'`
+- To seed all routes in a domain from json use this curl `curl --location 'http://localhost:8080/api/uploadRoutes' \
+--header 'Authorization: Bearer {{jwtToken}}' \
+--form 'routes=@"/Users/comviva/Downloads/MakeMocksBackup/blueMarbale/Routes.json"'`
+
 ## Tools
 
 1. [Node(18+)](https://nodejs.org/en/blog/release/v18.14.0)
